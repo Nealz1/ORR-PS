@@ -19,5 +19,11 @@ rmiregistry
 
 ### 3. Start Server
 Either green arrow or run compiled Server.class
+```bash
+java Server
+```
 ### 4. Start Client
 Either green arrow or run compiled Client.class
+```bash
+java Client
+```
