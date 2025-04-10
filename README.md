@@ -1,3 +1,7 @@
+# 🧠 Java RMI - 2x2 Matrix Multiplication
+
+This project demonstrates how to use Java RMI (Remote Method Invocation) to multiply two 2x2 matrices using distributed remote agents.
+
 ## 📦 Project Structure
 
 - `Server.java` - Starts and registers remote matrix agents
@@ -5,7 +9,6 @@
 - `AgentImpl.java` - Agent that performs one matrix cell computation
 - `MatrixTask.java` - Remote interface shared between client/server/agents
 
----
 
 ## ▶️ How to Run
 
