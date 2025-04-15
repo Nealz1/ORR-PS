@@ -4,11 +4,11 @@ This project demonstrates how to use Java RMI (Remote Method Invocation) to mult
 
 ## 📦 Project Structure
 
-- `Server.java` - Starts and registers remote matrix agents
-- `Client.java` - Sends matrix input and receives result
-- `AgentImpl.java` - Agent that performs one matrix cell computation
-- `MatrixTask.java` - Remote interface shared between client/server/agents
-
+- `src/Server.java` - Starts the RMI server and registers remote matrix agents.
+- `src/AgentImpl.java` - Implements the agent logic to compute a single matrix element.
+- `src/MatrixTask.java` - Remote interface defining the matrix multiplication task.
+- `src/AgentTask.java` - Remote interface defining the agent's computation task.
+- `src/Client.java` - Sends matrix input to the server and receives the result.
 
 ## ▶️ How to Run
 
