@@ -1,3 +1,4 @@
+import java.rmi.Naming;
 import java.util.Scanner;
 
 public class Client {
@@ -20,7 +21,8 @@ public class Client {
                     B[i][j] = scanner.nextInt();
                 }
 
-            int[][] result = Server.multiply(A, B);
+            MatrixTask matrixTask = (MatrixTask) Naming.lookup("rmi://localhost/MatrixTask");
+            int[][] result = matrixTask.multiply(A, B);
 
             System.out.println("Result (A x B):");
             for (int i = 0; i < 2; i++) {
