@@ -12,21 +12,27 @@ This project demonstrates how to use Java RMI (Remote Method Invocation) to mult
 
 ## ▶️ How to Run
 
-### 1. Build the project (Project -> Build -> Build Project)
+### 1. Build the project (Project -> Build -> Build Project) and move to out directory
+```bash
+ cd out/production/{project name}
+````
 ### 2. Start RMI Registry
 
 ```bash
-cd out/production/{project name}
-rmiregistry
+ rmiregistry
 ```
 
 ### 3. Start Server
 Either green arrow or run compiled Server.class
 ```bash
-java Server
+ java Server
 ```
-### 4. Start Client
-Either green arrow or run compiled Client.class
+### 4. Start Agents, each one in a different terminal
 ```bash
-java Client
+ java AgentImpl {number}
+```
+
+### 5. Start Client
+```bash
+ java Client
 ```
